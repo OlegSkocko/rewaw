@@ -1,15 +1,15 @@
-include<iostream> 
+#include <iostream>
 
 int  main(){
-    double num1,num2,;
+    double num1,num2;
     char op;
-   std::cout << 7;
-    std::cin num1;
-  
-    std::cout << "(*,-,+,/)";
+   std::cout << "Введіть перше число: ";
+    std::cin >> num1;
+
+    std::cout << "Введіть оператор (*, -, +, /): ";
     std::cin >> op;
 
-    std::cout << 12;
+    std::cout << "Введіть друге число: ";
     std::cin >> num2;
 
     double result;
@@ -27,14 +27,16 @@ int  main(){
         case '/':
     if (num2 !=0)
     result=num1/num2;
-    }else {
+    
+    else {
         std::cout<<std::endl;
-        return 1
+        return 1;
     }
     break;
     default:
     std::cout<<std::endl;
-    return 1
+    return 1;
+    }
+    std::cout << "Результат: " << result << std::endl;
+return 0;
 }
-std::cout<<result<<std::endl;
-return 0
